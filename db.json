@@ -78,16 +78,6 @@
         21
       ],
       "createdAt": "2026-02-19T10:32:00.219Z"
-    },
-    {
-      "id": 4,
-      "sessionId": 1,
-      "userId": 2,
-      "customerName": "admin",
-      "seats": [
-        40
-      ],
-      "createdAt": "2026-02-23T10:43:04.534Z"
     }
   ],
   "users": [
@@ -98,14 +88,6 @@
       "passwordSalt": "fa3ae9bae3a6c97f16371f94dd4671fd",
       "passwordHash": "f4681164afb236e7dccec4bc5bc47dfb1f49d88dd3942946bde5c895792951884c0496b3415af3d90034a2ad6838bb328a79c2ce8fba09540916409c5d612bc9",
       "createdAt": "2026-02-19T10:31:45.798Z"
-    },
-    {
-      "id": 2,
-      "username": "admin",
-      "fullName": "admin",
-      "passwordSalt": "ea2be4bebf04b1892aaa34ba27440d56",
-      "passwordHash": "7fb720927da02395ec52711784f83339e61639b09210850ca2fa7bb1a5038dd782637dfa78fbb3748fe17098f4c94e1adebadad876c12f22bc69a742d3d105ce",
-      "createdAt": "2026-02-23T09:52:28.954Z"
     }
   ],
   "authTokens": [
@@ -113,11 +95,6 @@
       "token": "fa04bbf36896a627d9281e2249debb84c6104afecd69f581",
       "userId": 1,
       "createdAt": "2026-02-19T10:31:50.828Z"
-    },
-    {
-      "token": "69c6eb3b022ede38437ec5abe12ec7a135bd569b11b52dc8",
-      "userId": 2,
-      "createdAt": "2026-02-23T09:52:36.530Z"
     }
   ]
 }

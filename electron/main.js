@@ -1,4 +1,4 @@
-const { app, BrowserWindow, dialog } = require('electron');
+const { app, BrowserWindow, dialog, Menu } = require('electron');
 const path = require('path');
 const { spawn } = require('child_process');
 const http = require('http');
@@ -84,11 +84,13 @@ async function createWindow() {
     minHeight: 720,
     backgroundColor: '#0b1220',
     title: 'CinemaFlow',
+    autoHideMenuBar: true,
     webPreferences: {
       contextIsolation: true,
       nodeIntegration: false,
     },
   });
+  mainWindow.setMenuBarVisibility(false);
 
   try {
     startBackend();
@@ -103,7 +105,10 @@ async function createWindow() {
   }
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  Menu.setApplicationMenu(null);
+  createWindow();
+});
 
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
