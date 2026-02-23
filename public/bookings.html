@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кинотеатр | Мои брони</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">CinemaFlow</div>
+      <nav class="nav">
+        <a data-nav="index.html" href="/index.html">Главная</a>
+        <a data-nav="movies.html" href="/movies.html">Афиша</a>
+        <a data-nav="bookings.html" href="/bookings.html">Мои брони</a>
+        <a data-nav="auth.html" href="/auth.html">Аккаунт</a>
+      </nav>
+      <div id="user-bar"></div>
+    </header>
+
+    <main class="page">
+      <section class="panel">
+        <h1>Мои брони</h1>
+        <p class="muted">Здесь можно посмотреть и отменить свои билеты.</p>
+        <div id="booking-list" class="stack"></div>
+        <p id="bookings-status" class="status"></p>
+      </section>
+    </main>
+
+    <script src="/common.js"></script>
+    <script src="/bookings.js"></script>
+  </body>
+</html>

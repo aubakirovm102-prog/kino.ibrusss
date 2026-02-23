@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кинотеатр | Аккаунт</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">CinemaFlow</div>
+      <nav class="nav">
+        <a data-nav="index.html" href="/index.html">Главная</a>
+        <a data-nav="movies.html" href="/movies.html">Афиша</a>
+        <a data-nav="bookings.html" href="/bookings.html">Мои брони</a>
+        <a data-nav="auth.html" href="/auth.html">Аккаунт</a>
+      </nav>
+      <div id="user-bar"></div>
+    </header>
+
+    <main class="page narrow">
+      <section class="panel auth-panel">
+        <h1>Аккаунт</h1>
+
+        <div class="tabs">
+          <button id="tab-login" class="btn ghost active" type="button">Вход</button>
+          <button id="tab-register" class="btn ghost" type="button">Регистрация</button>
+        </div>
+
+        <form id="login-form" class="stack">
+          <input id="login-username" type="text" placeholder="Логин" required />
+          <input id="login-password" type="password" placeholder="Пароль" required />
+          <button class="btn" type="submit">Войти</button>
+        </form>
+
+        <form id="register-form" class="stack hidden">
+          <input id="register-fullname" type="text" placeholder="Имя и фамилия" required />
+          <input id="register-username" type="text" placeholder="Логин" required />
+          <input id="register-password" type="password" placeholder="Пароль (мин. 6 символов)" required />
+          <button class="btn" type="submit">Создать аккаунт</button>
+        </form>
+
+        <p id="auth-status" class="status"></p>
+      </section>
+    </main>
+
+    <script src="/common.js"></script>
+    <script src="/auth.js"></script>
+  </body>
+</html>

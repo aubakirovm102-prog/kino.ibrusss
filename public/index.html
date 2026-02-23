@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кинотеатр | Главная</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">CinemaFlow</div>
+      <nav class="nav">
+        <a data-nav="index.html" href="/index.html">Главная</a>
+        <a data-nav="movies.html" href="/movies.html">Афиша</a>
+        <a data-nav="bookings.html" href="/bookings.html">Мои брони</a>
+        <a data-nav="auth.html" href="/auth.html">Аккаунт</a>
+      </nav>
+      <div id="user-bar"></div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <h1>Онлайн-кинотеатр с бронированием мест</h1>
+        <p>Выбирай фильм, удобный сеанс и место в зале. Все брони хранятся в личном кабинете.</p>
+        <div class="hero-actions">
+          <a class="btn" href="/movies.html">Перейти к афише</a>
+          <a class="btn ghost" href="/auth.html">Войти или зарегистрироваться</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Сейчас в прокате</h2>
+        <div id="movie-preview" class="movie-grid"></div>
+      </section>
+    </main>
+
+    <script src="/common.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
